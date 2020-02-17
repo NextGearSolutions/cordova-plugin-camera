@@ -211,7 +211,7 @@ static NSString* toBase64(NSData* data) {
         } else {
             NSLog(@"UIModalPresentationOverFullScreen");
             cameraPicker.modalPresentationStyle = UIModalPresentationOverFullScreen;
-            [self.viewController presentViewController:cameraPicker animated:YES completion:^{
+            [self.viewController presentViewController:cameraPicker animated:NO completion:^{
                 self.hasPendingOperation = NO;
             }];
         }
